@@ -18,7 +18,7 @@ Write-host "Do you want to disable cortana at the expense of your windows search
        N {Write-Host "Cortana has not been disabled `n"; $Nuke=$false} 
        Default {Write-Host "you probably should have entered a y or n as this message is the result of neither being entered `n"; $Nuke=$false} 
      }
-Write-host "Do run windows on a non-ssd Hard drive? (Default is No)" -ForegroundColor Yellow 
+Write-host "Do you run windows on a non-ssd Hard drive? (Default is No)" -ForegroundColor Yellow 
     $SSD = Read-Host " ( y / n ) " 
     Switch ($SSD) 
      { 
