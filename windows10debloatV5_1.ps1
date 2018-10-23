@@ -100,6 +100,7 @@ Get-AppxPackage microsoft.officelens | Remove-AppxPackage
 Get-AppxPackage microsoft.whiteboard | Remove-AppxPackage
 Get-AppxPackage microsoft.print3d | Remove-AppxPackage
 Get-AppxPackage Microsoft.Office.Sway | Remove-AppxPackage
+Get-AppxPackage Microsoft.Todos | Remove-AppxPackage
 
 <# Registry tweaks #>
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata" /v PreventDeviceMetadataFromNetwork /t REG_DWORD /d 1 /f
