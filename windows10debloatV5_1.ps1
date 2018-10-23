@@ -95,6 +95,11 @@ Get-AppxPackage PandoraMediaInc.29680B314EFC2 | Remove-AppxPackage
 Get-AppxPackage Microsoft.BingWeather | Remove-AppxPackage
 Get-AppxPackage D5EA27B7.Duolingo-LearnLanguagesforFree | Remove-AppxPackage
 Get-AppxPackage AdobeSystemsIncorporated.AdobePhotoshopExpress | Remove-AppxPackage
+Get-AppxPackage microsoft.Bingnews | Remove-AppxPackage
+Get-AppxPackage microsoft.officelens | Remove-AppxPackage
+Get-AppxPackage microsoft.whiteboard | Remove-AppxPackage
+Get-AppxPackage microsoft.print3d | Remove-AppxPackage
+Get-AppxPackage Microsoft.Office.Sway | Remove-AppxPackage
 
 <# Registry tweaks #>
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata" /v PreventDeviceMetadataFromNetwork /t REG_DWORD /d 1 /f
@@ -125,4 +130,5 @@ Removed unused variables
 changed legacy sc commands to stop-service commands
 added reg key to disable the tablet input service for security reasons
 added reg key to disable location tracking
+Added 5 app packages
 #>
